@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- estilos de reset -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- estilos de las etiquetas -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- libreria para las alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./js/logica.js" defer></script>
+<script src="./js/data.js" defer></script>
+<script src="./js/ui.js" defer></script>
+
+    <title>Tarea 3</title>
+  </head>
+
+  <body>
+    <div class="layout">
+  <header class="layout__header">
+    <h1>Tarea 3</h1>
+  </header>
+
+  <div class="layout__container">
+    <aside class="layout__sidebar-left">
+      <h3>Instrucciones</h3>
+      <div class="main__text">
+        <p>1-2: Cambiar formato.</p>
+        <p>3: Guardar en base de datos.</p>
+        <p>4: Ver listado completo.</p>
+        <p>5-6: Buscar por longitud.</p>
+        <p>7: Ordenar A-Z.</p>
+        <p>8: Borrar registro.</p>
+      </div>
+
+      <div class="main__buttons">
+        <button class="btn__menu" data-action="mayus">1- Mayúsculas</button>
+        <button class="btn__menu" data-action="minus">2- Minúsculas</button>
+        <button class="btn__menu" data-action="guardar">3- Guardar</button>
+        <button class="btn__menu" data-action="visualizar">4- Visualizar</button>
+        <button class="btn__menu" data-action="menosCaracter">5- Menor longitud</button>
+        <button class="btn__menu" data-action="mayorCaracter">6- Mayor longitud</button>
+        <button class="btn__menu" data-action="ordenar">7- Ordenar A-Z</button>
+        <button class="btn__menu" data-action="eliminar">8- Eliminar</button>
+        <button class="btn__menu" style="background: #dc2626;" data-action="borrarTodo">9- Borrar Todo</button>
+      </div>
+    </aside>
+
+    <main class="layout__main">
+      <section class="form__container">
+        <form id="main__form">
+          <label for="form__input">Entrada de Texto</label>
+          <input type="text" id="form__input" placeholder="Escribe aquí..." autocomplete="off"/>
+        </form>
+      </section>
+
+      <section id="pantalla-central" class="display__area">
+        <div id="resultado-operacion">
+          <p>El resultado aparecerá aquí. borrando esta etiqueta y reemplazando con el html de la funcion</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="layout__sidebar-right">
+      <h3>Actividad</h3>
+      <div id="resultado">
+        </div>
+    </aside>
+  </div>
+
+  <footer class="layout__footer">
+    <p>ENTREGABLE 3 - JHON EDWIN GAVIRIA</p>
+  </footer>
+</div>
+  </body>
+</html>
