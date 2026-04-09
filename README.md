@@ -1,0 +1,1 @@
+Se agrega una funcionalidad al proyecto para seguir trabajando sin internet y mostrar las paginas que se hayan navegado, previamente se guardan en localStorage y desde alli se consultan para tener funcionales las opciones de agregar a favoritos y al carrito de compras. Con sweetAlert2 se da indicacion de error de internet y se explica como seguir trabajando. 
