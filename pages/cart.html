@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tu Carrito</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/cart.js" defer></script>
+  </head>
+  <body>
+    <div class="cart-container">
+      <a href="../index.html" class="btn-back">← Volver a la tienda</a>
+      <h1>Tu Carrito</h1>
+
+      <div id="cart-list" class="game-grid"></div>
+
+      <div class="total-section">
+        Total: <span id="total-price">$0.00</span>
+      </div>
+      <button class="btn-checkout" onclick="processPurchase()">
+        Finalizar Compra
+      </button>
+    </div>
+  </body>
+</html>
